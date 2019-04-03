@@ -7,6 +7,9 @@ Design for a generalized framework with options for double dqn, duel dqn, and pr
 * options.py - object for storage of parameters (parameters and model requirements vary between environments)
 * memory.py - structures for storing experiences in a memory replay (both standard queue and prioritized experience replay)
 * Agents - both are nearly identical - separated for more efficient testing and cleaner individual codes 
-  * agent.py - agent that contains the network, and generates actions based on states
+  * agent.py - agent that contains the network, and generates actions based on states; leverages discrete states (ie linear states)
   * conv_agent.py - agent that supports convolutional networks (ie image states)
+* Models - both are available for significant modification based on network - separated for testing convenience
+  * model.py - for linear models
+  * conv_model.py for convolutional models
  
